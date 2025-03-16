@@ -1,0 +1,61 @@
+                       {
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to iDM Heat Pump",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "idm_outside_temperature": {
+        "name": "a Outside Temperature"
+      },
+      "outside_temp_averaged": {
+        "name": "Outside Temperature (Averaged)"
+      },
+      "internal_message": {
+        "name": "Internal Message"
+      },
+      "system_mode": {
+        "name": "System Mode"
+      },
+      "buffer_temp": {
+        "name": "Buffer Temperature"
+      },
+      "cooling_buffer_temp": {
+        "name": "Cooling Buffer Temperature"
+      },
+      "dhw_temp_bottom": {
+        "name": "DHW Temperature Bottom"
+      },
+      "dhw_temp_top": {
+        "name": "DHW Temperature Top"
+      },
+      "electric_heating_energy": {
+        "name": "Electric Heating Element Energy"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "iDM Heat Pump Options",
+        "data": {
+          "scan_interval": "Scan Interval (seconds)"
+        }
+      }
+    }
+  }
+}

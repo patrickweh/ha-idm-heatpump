@@ -1,0 +1,38 @@
+reset_error:
+  name: Reset Error
+  description: Reset the error state of the heat pump
+  target:
+    entity:
+      integration: idm_heatpump
+      domain: climate
+
+set_temperature_boost:
+  name: Temperature Boost
+  description: Temporarily boost the temperature for the selected time
+  target:
+    entity:
+      integration: idm_heatpump
+      domain: climate
+  fields:
+    temperature:
+      name: Temperature
+      description: Target temperature to boost to
+      example: 24
+      required: true
+      selector:
+        number:
+          min: 15
+          max: 30
+          step: 0.5
+          unit_of_measurement: °C
+    duration:
+      name: Duration
+      description: Duration of boost in minutes
+      example: 60
+      required: true
+      selector:
+        number:
+          min: 30
+          max: 240
+          step: 30
+          unit_of_measurement: min

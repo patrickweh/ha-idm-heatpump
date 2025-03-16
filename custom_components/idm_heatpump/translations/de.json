@@ -1,0 +1,333 @@
+{
+  "config": {
+    "title": "iDM Wärmepumpe",
+    "step": {
+      "user": {
+        "title": "iDM Wärmepumpe verbinden",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_auth": "Ungültige Authentifizierung",
+      "unknown": "Unbekannter Fehler"
+    },
+    "abort": {
+      "already_configured": "Gerät ist bereits konfiguriert"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Scan-Intervall (Sekunden)"
+        }
+      }
+    }
+  },
+  "title": "iDM Wärmepumpe",
+  "entity": {
+    "sensor": {
+      "idm_outside_temperature": {
+        "name": "iDM Außentemperatur"
+      },
+      "idm_outside_temp_averaged": {
+        "name": "iDM Außentemperatur (Durchschnitt)"
+      },
+      "idm_internal_message": {
+        "name": "iDM Interne Meldung"
+      },
+      "idm_system_mode": {
+        "name": "iDM Systemmodus",
+        "state": {
+          "0": "Standby",
+          "1": "Automatisch",
+          "2": "Abwesend",
+          "4": "Nur Warmwasser",
+          "5": "Nur Heizung/Kühlung"
+        }
+      },
+      "idm_smart_grid_status": {
+        "name": "iDM Smart Grid Status"
+      },
+      "idm_buffer_temp": {
+        "name": "iDM Puffertemperatur"
+      },
+      "idm_cooling_buffer_temp": {
+        "name": "iDM Kühlpuffertemperatur"
+      },
+      "idm_dhw_temp_bottom": {
+        "name": "iDM Warmwassertemperatur unten"
+      },
+      "idm_dhw_temp_top": {
+        "name": "iDM Warmwassertemperatur oben"
+      },
+      "idm_dhw_outlet_temp": {
+        "name": "iDM Warmwasserauslauftemperatur"
+      },
+      "idm_dhw_target_temp": {
+        "name": "iDM Warmwasser-Zieltemperatur"
+      },
+      "idm_dhw_on_temp": {
+        "name": "iDM Warmwasser-Einschalttemperatur"
+      },
+      "idm_dhw_off_temp": {
+        "name": "iDM Warmwasser-Ausschalttemperatur"
+      },
+      "idm_heat_pump_flow_temp": {
+        "name": "iDM Wärmepumpenvorlauftemperatur"
+      },
+      "idm_heat_pump_return_temp": {
+        "name": "iDM Wärmepumpenrücklauftemperatur"
+      },
+      "idm_hgl_flow_temp": {
+        "name": "iDM HGL Vorlauftemperatur"
+      },
+      "idm_source_inlet_temp": {
+        "name": "iDM Quelleneingangstemperatur"
+      },
+      "idm_source_outlet_temp": {
+        "name": "iDM Quellenausgangstemperatur"
+      },
+      "idm_air_intake_temp": {
+        "name": "iDM Lufteinlasstemperatur"
+      },
+      "idm_heat_pump_mode": {
+        "name": "iDM Wärmepumpenmodus",
+        "state": {
+          "0": "Aus",
+          "1": "Heizung",
+          "2": "Kühlung",
+          "4": "Warmwasser",
+          "8": "Abtauen"
+        }
+      },
+      "idm_heating_demand": {
+        "name": "iDM Heizungsanforderung"
+      },
+      "idm_cooling_demand": {
+        "name": "iDM Kühlanforderung"
+      },
+      "idm_dhw_demand": {
+        "name": "iDM Warmwasseranforderung"
+      },
+      "idm_evu_contact": {
+        "name": "iDM EVU Kontakt"
+      },
+      "idm_error_state": {
+        "name": "iDM Fehlerzustand"
+      },
+      "idm_compressor1_status": {
+        "name": "iDM Kompressor 1 Status"
+      },
+      "idm_compressor2_status": {
+        "name": "iDM Kompressor 2 Status"
+      },
+      "idm_loading_pump_status": {
+        "name": "iDM Ladepumpe Status"
+      },
+      "idm_source_pump_status": {
+        "name": "iDM Quellenpumpe Status"
+      },
+      "idm_groundwater_pump_status": {
+        "name": "iDM Grundwasserpumpe Status"
+      },
+      "idm_valve_circuit_heat_cool": {
+        "name": "iDM Ventil Kreislauf Heizen/Kühlen"
+      },
+      "idm_valve_buffer_heat_cool": {
+        "name": "iDM Ventil Puffer Heizen/Kühlen"
+      },
+      "idm_valve_heating_dhw": {
+        "name": "iDM Ventil Heizung/Warmwasser"
+      },
+      "idm_heating_circuit_a_temp": {
+        "name": "iDM Heizkreis A Temperatur"
+      },
+      "idm_heating_circuit_b_temp": {
+        "name": "iDM Heizkreis B Temperatur"
+      },
+      "idm_heating_circuit_a_room_temp": {
+        "name": "iDM Heizkreis A Raumtemperatur"
+      },
+      "idm_heating_circuit_b_room_temp": {
+        "name": "iDM Heizkreis B Raumtemperatur"
+      },
+      "idm_heating_circuit_a_target_temp": {
+        "name": "iDM Heizkreis A Zieltemperatur"
+      },
+      "idm_heating_circuit_b_target_temp": {
+        "name": "iDM Heizkreis B Zieltemperatur"
+      },
+      "idm_humidity": {
+        "name": "iDM Luftfeuchtigkeit"
+      },
+      "idm_heating_circuit_mode": {
+        "name": "iDM Heizkreismodus",
+        "state": {
+          "0": "Aus",
+          "1": "Zeitplan",
+          "2": "Normal",
+          "3": "Eco",
+          "4": "Manuelles Heizen",
+          "5": "Manuelles Kühlen"
+        }
+      },
+      "idm_heating_circuit_active_mode": {
+        "name": "iDM Heizkreis aktiver Modus"
+      },
+      "idm_external_room_temp_a": {
+        "name": "iDM Externe Raumtemperatur A"
+      },
+      "idm_external_room_temp_b": {
+        "name": "iDM Externe Raumtemperatur B"
+      },
+      "idm_external_outside_temp": {
+        "name": "iDM Externe Außentemperatur"
+      },
+      "idm_external_humidity": {
+        "name": "iDM Externe Luftfeuchtigkeit"
+      },
+      "idm_target_temp_heating": {
+        "name": "iDM Zieltemperatur Heizung"
+      },
+      "idm_target_temp_cooling": {
+        "name": "iDM Zieltemperatur Kühlung"
+      },
+      "idm_energy_heating": {
+        "name": "iDM Energie Heizung"
+      },
+      "idm_energy_total": {
+        "name": "iDM Energie Gesamt"
+      },
+      "idm_energy_cooling": {
+        "name": "iDM Energie Kühlung"
+      },
+      "idm_energy_dhw": {
+        "name": "iDM Energie Warmwasser"
+      },
+      "idm_defrosting_energy": {
+        "name": "iDM Energie Abtauung"
+      },
+      "idm_passive_cooling_energy": {
+        "name": "iDM Energie passive Kühlung"
+      },
+      "idm_solar_energy": {
+        "name": "iDM Solarenergie"
+      },
+      "idm_electric_heating_energy": {
+        "name": "iDM Energie elektrisches Heizelement"
+      },
+      "idm_current_power": {
+        "name": "iDM Wärmepumpe aktuelle Leistung"
+      },
+      "idm_solar_current_power": {
+        "name": "iDM Solar aktuelle Leistung"
+      },
+      "idm_solar_collector_temp": {
+        "name": "iDM Solarkollektor Temperatur"
+      },
+      "idm_solar_collector_return_temp": {
+        "name": "iDM Solarkollektor Rücklauftemperatur"
+      },
+      "idm_solar_loading_temp": {
+        "name": "iDM Solar Ladetemperatur"
+      },
+      "idm_glt_heat_storage_temp": {
+        "name": "iDM GLT Wärmespeichertemperatur"
+      },
+      "idm_glt_cold_storage_temp": {
+        "name": "iDM GLT Kältespeichertemperatur"
+      },
+      "idm_glt_dhw_bottom_temp": {
+        "name": "iDM GLT Warmwasser Temperatur unten"
+      },
+      "idm_glt_dhw_top_temp": {
+        "name": "iDM GLT Warmwasser Temperatur oben"
+      },
+      "idm_pv_surplus": {
+        "name": "iDM PV Überschuss"
+      },
+      "idm_e_heizstab_power": {
+        "name": "iDM E-Heizstab Leistung"
+      },
+      "idm_pv_production": {
+        "name": "iDM PV Produktion"
+      },
+      "idm_heat_pump_power_consumption": {
+        "name": "iDM Wärmepumpe Stromverbrauch"
+      },
+      "idm_thermal_output": {
+        "name": "iDM Thermische Leistung"
+      },
+      "idm_energy_meter_total": {
+        "name": "iDM Energiezähler Gesamt"
+      }
+    },
+    "switch": {
+      "idm_heating_demand": {
+        "name": "iDM Heizungsanforderung"
+      },
+      "idm_cooling_demand": {
+        "name": "iDM Kühlanforderung"
+      },
+      "idm_dhw_demand": {
+        "name": "iDM Warmwasseranforderung"
+      }
+    },
+    "number": {
+      "idm_dhw_target_temp": {
+        "name": "iDM Warmwasser-Zieltemperatur"
+      },
+      "idm_dhw_on_temp": {
+        "name": "iDM Warmwasser-Einschalttemperatur"
+      },
+      "idm_dhw_off_temp": {
+        "name": "iDM Warmwasser-Ausschalttemperatur"
+      },
+      "idm_target_temp_heating": {
+        "name": "iDM Zieltemperatur Heizung"
+      },
+      "idm_target_temp_cooling": {
+        "name": "iDM Zieltemperatur Kühlung"
+      }
+    },
+    "climate": {
+      "idm": {
+        "state": {
+          "off": "Aus",
+          "heat": "Heizen",
+          "cool": "Kühlen",
+          "auto": "Automatisch"
+        }
+      }
+    },
+    "select": {
+      "idm_system_mode": {
+        "name": "iDM Systemmodus",
+        "state": {
+          "0": "Standby",
+          "1": "Automatisch",
+          "2": "Abwesend",
+          "4": "Nur Warmwasser",
+          "5": "Nur Heizung/Kühlung"
+        }
+      },
+      "idm_heating_circuit_mode": {
+        "name": "iDM Heizkreismodus",
+        "state": {
+          "0": "Aus",
+          "1": "Zeitplan",
+          "2": "Normal",
+          "3": "Eco",
+          "4": "Manuelles Heizen",
+          "5": "Manuelles Kühlen"
+        }
+      }
+    }
+  }
+}
