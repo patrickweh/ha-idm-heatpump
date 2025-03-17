@@ -1,0 +1,10 @@
+{
+  "name": "iDM Heatpump Integration",
+  "country": "DE",
+  "domains": ["idm_heatpump"],
+  "homeassistant": "2025.1.0",
+  "render_readme": true,
+  "filename": "custom_components/idm_heatpump",
+  "iot_class": "local_push",
+  "zip_release": false
+}
