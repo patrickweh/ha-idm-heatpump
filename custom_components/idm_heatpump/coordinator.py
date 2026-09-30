@@ -6,7 +6,6 @@ import math
 
 # Updated imports for PyModbus v3
 from pymodbus.client import ModbusTcpClient
-from pymodbus.constants import Endian
 
 from homeassistant.components.climate import HVACAction, HVACMode
 from homeassistant.core import HomeAssistant
